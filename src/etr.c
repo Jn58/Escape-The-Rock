@@ -1,7 +1,7 @@
 #include "etr.h"
 #include <conio.h>
 #include <time.h>
-#include "default.h"
+#include "common.h"
 #include "frame.h"
 
 int main() {
@@ -42,9 +42,10 @@ int main() {
 				printf("|");
 				break;
 			}
-			gotoxy(WIDTH+35,HEIGHT);
-			printf("%d,%d",x,y);
+			gotoxy(WIDTH+30,HEIGHT);
+			printf("%3d,%2d",x,y);
 		}
+		else break;
 	}
 
 	return 0;
